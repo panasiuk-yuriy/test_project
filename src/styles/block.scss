@@ -1,0 +1,87 @@
+@import "utils/vars";
+
+.block {
+  padding-top: 168px;
+  padding-bottom: 340px;
+  background-color: #233249;
+  width: 100%;
+  background-image: url("../images/icons/favicon_primary_white.svg");
+  background-repeat: no-repeat;
+  background-position: 50% -25%;
+  background-size: 64rem;
+
+  @media screen and (max-width: 1441px) {
+    padding-top: 178px;
+  }
+
+  @media screen and (max-width: $tablet-size) {
+    padding-top: 8em;
+    padding-bottom: 220px;
+  }
+
+  &__container {
+    max-width: 975px;
+    margin: 0 auto;
+  }
+
+  &__content {
+    margin-top: 105px;
+    display: grid;
+    grid-gap: 6em;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+    @media screen and (max-width: $tablet-size) {
+      margin-top: 40px;
+      grid-row-gap: 28px;
+    }
+  }
+
+  &__title {
+    max-width: 585px;
+    display: inline-block;
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+
+    @media screen and (max-width: $tablet-size) {
+      font-size: 29px;
+    }
+
+    &::before {
+      content: "";
+      top: -37px;
+      position: absolute;
+      width: 28px;
+      height: 13px;
+      transform: skew(0deg, -20deg);
+      background: #1f65d9;
+      animation: rotate-vert 1s cubic-bezier(0.46, 0.03, 0.52, 0.95) both;
+
+      @media screen and (max-width: $tablet-size) {
+        top: -34px;
+        position: absolute;
+        width: 20px;
+        height: 10px;
+      }
+    }
+  }
+}
+
+@keyframes rotate-vert {
+  0% {
+    transform: rotateY(0) skew(0deg, -20deg);
+  }
+  100% {
+    transform: rotateY(360deg) skew(0deg, -20deg);
+  }
+}
+
+.newblock {
+  &__title {
+    color: #233148;
+    margin-top: -20px;
+  }
+}

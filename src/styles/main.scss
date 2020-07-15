@@ -1,7 +1,18 @@
 @import "utils";
+@import "reset";
 @import "fonts";
-@import "typography";
+@import "block";
+@import "info-block";
+@import "lightpaper";
 
-body {
-  background: $c-gray;
+.container {
+  max-width: 1172px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.test {
+  width: 200px;
+  height: 200px;
+  background-color: red;
 }
