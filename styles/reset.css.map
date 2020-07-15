@@ -1,0 +1,1 @@
+{"version":3,"sources":["reset.scss"],"names":[],"mappings":"AAAA;;;;;EAKE,kCAAkC;EAClC,gBAAgB;EAChB,SAAS;EACT,UAAU,EAAA","file":"reset.css","sourcesContent":["body,\nh1,\nh2,\np,\nbutton {\n  font-family: \"Proxima\", sans-serif;\n  font-weight: 500;\n  margin: 0;\n  padding: 0;\n}\n"]}
